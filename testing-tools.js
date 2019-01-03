@@ -125,3 +125,51 @@ function gen_num_cases_from_seed(num_args, base, seed) {
   return cases
 
 }
+
+function gen_bool_cases_from_seed(num_args, seed) {
+  const num_tests = Math.pow(2, num_args);
+  const possible_tables = Math.pow(2, num_tests);
+
+  if (seed > possible_tables) {
+    const msg = 'seed is larger than 2^(2^'+num_args+') = '+possible_tables; 
+    const err = new Error(msg);
+    throw err;
+  };
+
+  const str_cases_arr = [];
+
+  // generate an array of all binary strings of size num_args
+  const max_bin = parseInt("1".repeat(num_args),2);
+  for(let n = 0; n <= max_bin; n++){
+    const bin_str = n.toString(2);
+    const padded_str = bin_str.padStart(num_args,'0');
+    str_cases_arr.push(padded_str);
+  }
+
+  // convert strings to arrays of booleans
+  const to_boolean = (x) => Boolean(Number(x));
+  const to_arr_o_bools = (str) => { return str.split('').map(to_boolean) };
+  const arr_o_cases = str_cases_arr.map(to_arr_o_bools);
+
+  // reverse for compatibility with nested if/elses
+  arr_o_cases.reverse();
+
+  // generate expected values from seed                                                                        
+  const bin_str = seed.toString(2);                       
+  const padded_str = bin_str.padStart(num_tests,'0');     
+  const arr_o_strs = padded_str.split('');                
+  const expecteds = arr_o_strs.map(to_boolean);   
+
+  const cases = [];
+
+  for (let i = 0; i < num_tests; i++) {
+    const _case = {};                       
+    _case.name = String(arr_o_cases[i]);    
+    _case.args = arr_o_cases[i];            
+    _case.expected = expecteds[i];          
+    cases.push(_case);                      
+  };
+
+  return cases
+
+}
