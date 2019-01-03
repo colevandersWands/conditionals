@@ -1,0 +1,7 @@
+exercise includes
+  expansion & logging like with expanded ifs
+  can there be a full truth table per expression?
+    step-by-step
+  using truth tables to establish equality between statements
+
+https://www.electrical4u.com/switching-algebra-or-boolean-algebra/

@@ -1,0 +1,35 @@
+an in-console reference to all the rules from that list site
+  with a few extra practice steps
+
+exercises
+  one for each rule
+    an example or two up top
+    some simple 1-2 step 
+    more complex ones that require that rule
+  convert to forms 
+    given expression, convert to 
+    all ||
+    all &&
+    other official forms (see auto-calc for list)
+  start -> end
+    a starting expression & an ending expression
+    go from one to the next
+  minimize
+    given a long but not-too-hard-to-reduce expression
+    get it as small as you can
+
+
+- merge this folder with derivations
+
+** simplification calculator
+  https://www.dcode.fr/boolean-expressions-calculator
+  
+uses conditional statements
+  - good for simplification
+    convert his table to JS
+  http://cs111.wellesley.edu/~cs111/archive/cs111_spring00/public_html/lectures/boolean-simplification.html
+formal laws of derivation
+  - good for derivations
+  advanced
+  http://sandbox.mc.edu/~bennet/cs110/boolalg/simple.html
+

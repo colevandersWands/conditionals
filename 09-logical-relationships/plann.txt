@@ -1,0 +1,2 @@
+much better version of this:  https://github.com/elewa-academy/mapping-conditional-checks
+that integrates things seen before
