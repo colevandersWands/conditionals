@@ -1,1 +1,1 @@
-console.log('# Boolean Algebra');
+console.log('%cBoolean Algebra', 'font-size:large');

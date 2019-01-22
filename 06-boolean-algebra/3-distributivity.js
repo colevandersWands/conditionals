@@ -1,13 +1,12 @@
+console.log('%c\nDistributivity', 'font-weight:bold')
 
 console.log(`
-### Distributivity
-
 "distributive" means you can move a variable & operator inside parenthesis
 
 this is useful when simplifying & refactoring boolean expressions
 `)
 
-{ console.log('\n || **distributes** over && ');
+{ console.log('%c\n || distributes over && ', 'font-style:italic');
 
   const a = (a,b,c) =>       a || (b && c)    ;
   const a_cases = gen_cases_from_exp(a);
@@ -20,7 +19,7 @@ this is useful when simplifying & refactoring boolean expressions
 
 };
 
-{ console.log('\n && **distributes** over || ');
+{ console.log('%c\n && distributes over || ', 'font-style:italic');
 
   const a = (a,b,c) =>         a && (b || c)    ;
   const a_cases = gen_cases_from_exp(a);

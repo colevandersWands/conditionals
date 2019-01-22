@@ -1,11 +1,10 @@
+console.log('%c\nDe Morgan\'s Law', 'font-weight:bold')
 
 console.log(`
-### Demorgans Law
-
-this law allows describes how negation distrubtes over || and &&
+this law describes how negation distrubtes over || and &&
 `)
 
-{ console.log('\n! **distributes** over ||');
+{ console.log('\n%c  ! distributes over ||', 'font-style:italic');
 
   const a = (a,b) =>       !(a || b)     ;
   const a_cases = gen_cases_from_exp(a);
@@ -19,7 +18,7 @@ this law allows describes how negation distrubtes over || and &&
 };
 
 
-{ console.log('\n! **distributes** over &&');
+{ console.log('%c\n  ! distributes over &&', 'font-style:italic');
 
   const a = (a,b) =>       !(a && b)    ;
   const a_cases = gen_cases_from_exp(a);
@@ -33,7 +32,7 @@ this law allows describes how negation distrubtes over || and &&
 };
 
 
-{ console.log('\n! **distributes** over multiple ||');
+{ console.log('%c\n  ! distributes over multiple ||', 'font-style:italic');
 
   const a = (a,b,c) =>       !(a || b || c)    ;
   const a_cases = gen_cases_from_exp(a);
@@ -47,7 +46,7 @@ this law allows describes how negation distrubtes over || and &&
 };
 
 
-{ console.log('\n! **distributes** over multiple &&');
+{ console.log('%c\n  ! distributes over multiple &&', 'font-style:italic');
 
   const a = (a,b,c) =>        !(a && b && c)    ;
   const a_cases = gen_cases_from_exp(a);

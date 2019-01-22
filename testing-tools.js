@@ -39,7 +39,7 @@ function gen_cases_from_exp(f) {
   const to_arr_o_bools = (str) => { return str.split('').map(to_boolean) };
   const arr_o_cases = all_binary_strings.map(to_arr_o_bools);
 
-  // reverse for compatibility with nested if/elses
+  // reverse for top->bottom alignment with nested if/elses
   arr_o_cases.reverse();
   
   // build a test_cases object around each array of booleans

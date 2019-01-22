@@ -1,5 +1,5 @@
 
-console.log('\n# secondary operators');
+console.log('%csecondary operators', 'font-weight:bold');
 
 console.log(`
   in boolean algebra there are 3 secondary operations.
@@ -11,15 +11,15 @@ console.log(`
 `);
 
 
-  console.log('### equality:  a === b  ')
-    console.log('native implementation ')
+  console.log('%cequality:  a === b  ', 'font-style:italics')
+    console.log('   native implementation ')
     console.table({
       ['true, true']:    true === true,
       ['true, false']:   true === false,
       ['false, true']:   false === true,
       ['false, false']:  false === false
     })
-    console.log('replication with !, &&, ||')
+    console.log('   replication with !, &&, ||')
     console.table({
       ['true, true']:    !((true || true) && !(true && true)),
       ['true, false']:   !((true || false) && !(true && false)),
@@ -27,8 +27,8 @@ console.log(`
       ['false, false']:  !((false || false) && !(false && false))
     })
 
-  console.log('### exclusive or:  a xor b  ')
-    console.log('non-native')
+  console.log('%cexclusive or:  a xor b  ', 'font-style:italic')
+    console.log('   non-native')
     console.table({
       ['true, true']:    (true || true) && !(true && true),
       ['true, false']:   (true || false) && !(true && false),
@@ -36,8 +36,8 @@ console.log(`
       ['false, false']:  (false || false) && !(false && false)
     })
 
-  console.log('### implies:  a -> b  ')
-    console.log('non-native')
+  console.log('%cimplies:  a -> b  ', 'font-style:italic')
+    console.log('   non-native')
     console.table({
       ['true, true']:    !true || true,
       ['true, false']:   !true || false,

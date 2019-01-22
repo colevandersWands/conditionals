@@ -1,4 +1,4 @@
-console.log('## the set');
+console.log('%cthe set', 'font-weight:bold');
 
 console.log(`
 in boolean algebra there are only two values:

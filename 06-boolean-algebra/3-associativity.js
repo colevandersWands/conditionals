@@ -1,11 +1,11 @@
-console.log(`
-### Associativity
+console.log('%c\nAssociativity', 'font-weight:bold')
 
+console.log(`
 "associative" means that if all operators are the same, 
 it does not matter where the parenthesis go
 `)
 
-{ console.log('\n || is **associative** ');
+{ console.log('%c\n  || is associative ', 'font-style:italic');
 
   const a = (a,b,c) =>       (a || b) || c    ;
   const a_cases = gen_cases_from_exp(a);
@@ -18,7 +18,7 @@ it does not matter where the parenthesis go
 
 };
 
-{ console.log('\n && is **associative** ');
+{ console.log('%c\n  && is associative ', 'font-style:italic');
 
   const a = (a,b,c) =>       (a && b) && c    ;
   const a_cases = gen_cases_from_exp(a);

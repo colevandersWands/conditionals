@@ -5,3 +5,11 @@ exercise includes
   using truth tables to establish equality between statements
 
 https://www.electrical4u.com/switching-algebra-or-boolean-algebra/
+http://www.davidagler.com/teaching/logic/handouts/new/PHIL012_Handout_3.pdf
+https://medium.freecodecamp.org/a-definitive-guide-to-conditional-logic-in-javascript-23fa234d2ca3
+
+series:
+  https://medium.com/@ntgard/https-medium-com-ntgard-boolean-logic-in-javascript-part-1-3371af974f19
+  https://medium.com/@ntgard/https-medium-com-ntgard-boolean-logic-in-javascript-part-2-ec0b13169b2
+  https://medium.com/@ntgard/https-medium-com-ntgard-boolean-logic-in-javascript-part-3-56ea3dfa53ab
+  https://medium.com/@ntgard/https-medium-com-ntgard-boolean-logic-in-javascript-part-4-ff7164842be8
